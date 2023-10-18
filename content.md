@@ -9,7 +9,8 @@
 Dators izvēle skaitli viens 1 - 100. to liek uzminet
 
 Spele logika ir vienkarsa 
-'import random
+```py
+import random
 
 repeat = True
 
@@ -19,27 +20,32 @@ while repeat:
     tries = 0
 
     while guess != number:
-        if guess > number:
-            print("Too big!")
+        if guess < number:
+            print("Pamēģini lielāku skaitli.")
         else:
-            print("Too smol!")
-        
-        guess = int(input("Uzmini Skaitli: "))
+            print("Pamēģini mazāku skaitli.")
+
+        guess = int(input("Uzmini skaitli: "))
         tries += 1
     else:
         if tries < 4:
-            print("Not bad rookie")
+            print(f"WOW! uzminēji tikai pēc {tries} reizēm!")
         elif tries < 7:
-            print("U should get better")
+            print(f"Nav slikti, uzminēji pēc {tries} reizēm!")
         else:
-            print(f"{tries} kinda bad")
-    
-    response = input("Retry y/n: ")
+            print(f"Hm... vajadzētu patrenēties, uzminēji pēc {tries} reizēm!")
+
+    response = input("Vai gribi turpināt? y/n: ")    
     if response == "y":
         repeat = True
     elif response == "n":
         repeat = False
+        print("Paldies par spēli! Bye, bye!")
     else:
-        repeat = False'py
+        repeat = False
+        print("Paldies par spēli!  Bye, bye!")
+```
+
+
 
 ### 3. Spelet to
