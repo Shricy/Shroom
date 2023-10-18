@@ -1,11 +1,11 @@
-### Izveidot number guessing game ar Phython valodu
+## Izveidot number guessing game ar Phython valodu
 
 ### Sēnes Saturs
 
-### 1. Speles Apraksts
+#### 1. Speles Apraksts
 Laba spēle ar vienkāršu loģiku.
 
-### 2. Speles logika
+#### 2. Speles logika
 
 Dators izvēle skaitli viens 1 - 100. to liek uzminet
 
