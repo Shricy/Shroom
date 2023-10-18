@@ -1,8 +1,9 @@
 ### Izveidot number guessing game ar Phython valodu
 
-### Saturs
+### Sēnes Saturs
 
-### 1. Aprakstīt speli
+### 1. Speles Apraksts
+Laba spēle ar vienkāršu loģiku.
 
 ### 2. Speles logika
 
