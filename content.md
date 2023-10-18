@@ -21,30 +21,28 @@ while repeat:
     tries = 0
 
     while guess != number:
-        if guess < number:
-            print("Pamēģini lielāku skaitli.")
+        if guess > number:
+            print("Too big!")
         else:
-            print("Pamēģini mazāku skaitli.")
-
-        guess = int(input("Uzmini skaitli: "))
+            print("Too smol!")
+        
+        guess = int(input("Uzmini Skaitli: "))
         tries += 1
     else:
         if tries < 4:
-            print(f"WOW! uzminēji tikai pēc {tries} reizēm!")
+            print("Not bad rookie")
         elif tries < 7:
-            print(f"Nav slikti, uzminēji pēc {tries} reizēm!")
+            print("U should get better")
         else:
-            print(f"Hm... vajadzētu patrenēties, uzminēji pēc {tries} reizēm!")
-
-    response = input("Vai gribi turpināt? y/n: ")    
+            print(f"{tries} kinda bad")
+    
+    response = input("Retry y/n: ")
     if response == "y":
         repeat = True
     elif response == "n":
         repeat = False
-        print("Paldies par spēli! Bye, bye!")
     else:
         repeat = False
-        print("Paldies par spēli!  Bye, bye!")
 ```
 
 
