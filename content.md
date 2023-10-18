@@ -48,3 +48,11 @@ while repeat:
 
 
 ### 3. Spelet to
+
+```py
+names = ['Bob','Rob','Bor']
+ages = [15,22,18]
+
+for i in range(3):
+    print(f"Hallo mani sauc {names[i]} un man ir {ages[i]} gadi!")
+```
